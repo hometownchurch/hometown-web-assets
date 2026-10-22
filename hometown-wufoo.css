@@ -81,20 +81,4 @@ form.wufoo { font-family: Arial, Helvetica, sans-serif; }
   outline-offset: 3px;
 }
 
-/* Remove spacing left by hidden Wufoo header */
-.wufoo form {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.wufoo ul {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.wufoo #header,
-.wufoo .info {
-  display: none !important;
-}
-
 /* Do not override Wufoo's conditional visibility classes or required-field logic. */
