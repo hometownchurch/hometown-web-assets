@@ -1,14 +1,25 @@
-/* Hometown Church — Wufoo form refinements, v1 */
-/* Loaded through Wufoo Theme Designer > Advanced CSS URL. */
+/* Hometown Church — Wufoo form refinements, v2
+   Loaded through Wufoo Theme Designer > Advanced CSS URL.
+   Page headings and form spacing are managed in Webflow.
+*/
 
+/* Form background and typography */
 html, body, #container, #formContainer, form.wufoo {
   background: transparent !important;
 }
 
-form.wufoo { font-family: Arial, Helvetica, sans-serif; }
+form.wufoo {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-.wufoo li { padding-top: 10px; padding-bottom: 10px; }
-.wufoo label.desc, .wufoo legend.desc {
+/* Field spacing and labels */
+.wufoo li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wufoo label.desc,
+.wufoo legend.desc {
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -16,8 +27,12 @@ form.wufoo { font-family: Arial, Helvetica, sans-serif; }
   line-height: 1.5;
 }
 
-.wufoo input.text, .wufoo input.search, .wufoo input.file,
-.wufoo textarea.textarea, .wufoo select.select {
+/* Inputs, dropdowns, and textareas */
+.wufoo input.text,
+.wufoo input.search,
+.wufoo input.file,
+.wufoo textarea.textarea,
+.wufoo select.select {
   box-sizing: border-box;
   max-width: 100%;
   background: #ffffff;
@@ -30,37 +45,25 @@ form.wufoo { font-family: Arial, Helvetica, sans-serif; }
   line-height: 1.4;
 }
 
-.wufoo input.text:focus, .wufoo textarea.textarea:focus,
+.wufoo input.text:focus,
+.wufoo textarea.textarea:focus,
 .wufoo select.select:focus {
   outline: 2px solid #667b92;
   outline-offset: 1px;
   border-color: #667b92;
 }
 
-.wufoo .buttons input.submit {
-  background: #273e54;
-  border: 1px solid #273e54;
-  border-radius: 6px;
-  color: #ffffff;
-  padding: 12px 24px;
-  font: 700 15px Arial, Helvetica, sans-serif;
-  cursor: pointer;
-}
-.wufoo .buttons input.submit:hover,
-.wufoo .buttons input.submit:focus { background: #395b78; }
-
-/* Hide Wufoo form title and description */
+/* Webflow supplies the page heading and description */
 #header,
-.wufoo #header,
 .wufoo .info {
   display: none !important;
 }
 
-/* Hometown Church Wufoo Submit Button */
+/* Hometown peach Submit button */
 .wufoo input.btTxt {
   background-color: #ffcab1 !important;
   color: #222222 !important;
-  font-family: Arial, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   padding: 14px 30px !important;
@@ -70,15 +73,14 @@ form.wufoo { font-family: Arial, Helvetica, sans-serif; }
   transition: background-color 0.2s ease;
 }
 
-/* Submit button hover */
 .wufoo input.btTxt:hover {
   background-color: #f2ae8e !important;
 }
 
-/* Keyboard focus */
 .wufoo input.btTxt:focus-visible {
   outline: 3px solid #245b83;
   outline-offset: 3px;
 }
 
-/* Do not override Wufoo's conditional visibility classes or required-field logic. */
+/* Leave Wufoo conditional visibility and required-field logic intact. */
+
