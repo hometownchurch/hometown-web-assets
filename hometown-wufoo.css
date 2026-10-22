@@ -50,6 +50,8 @@ form.wufoo { font-family: Arial, Helvetica, sans-serif; }
 .wufoo .buttons input.submit:focus { background: #395b78; }
 
 /* Hide Wufoo form title and description */
+#header,
+.wufoo #header,
 .wufoo .info {
   display: none !important;
 }
